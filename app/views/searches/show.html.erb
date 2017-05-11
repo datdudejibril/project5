@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Name:</strong>
   <%= @search.name %>
@@ -8,6 +6,11 @@
 <p>
   <strong>Search text:</strong>
   <%= @search.search_text %>
+</p>
+
+<p>
+  <strong>Reply tweet:</strong>
+  <%= @search.reply_tweet %>
 </p>
 
 <%= link_to 'Edit', edit_search_path(@search) %> |
