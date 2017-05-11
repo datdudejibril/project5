@@ -1,30 +1,22 @@
 class SearchesController < ApplicationController
   before_action :set_search, only: [:show, :edit, :update, :destroy]
-
-  # GET /searches
-  # GET /searches.json
+  before_action :authenticate_user!, except: [:index, :show]
   def index
     @searches = Search.all
   end
 
-  # GET /searches/1
-  # GET /searches/1.json
   def show
   end
 
-  # GET /searches/new
   def new
-    @search = Search.new
+    @search = current_user.searches.build
   end
 
-  # GET /searches/1/edit
   def edit
   end
 
-  # POST /searches
-  # POST /searches.json
   def create
-    @search = Search.new(search_params)
+    @search = current_user.searches.build(search_params)
 
     respond_to do |format|
       if @search.save
@@ -37,8 +29,6 @@ class SearchesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /searches/1
-  # PATCH/PUT /searches/1.json
   def update
     respond_to do |format|
       if @search.update(search_params)
@@ -51,8 +41,6 @@ class SearchesController < ApplicationController
     end
   end
 
-  # DELETE /searches/1
-  # DELETE /searches/1.json
   def destroy
     @search.destroy
     respond_to do |format|
@@ -62,12 +50,10 @@ class SearchesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_search
       @search = Search.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def search_params
       params.require(:search).permit(:name, :search_text)
     end
