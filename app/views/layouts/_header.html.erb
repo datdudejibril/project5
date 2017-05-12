@@ -15,23 +15,23 @@
                         <%= link_to "Home", root_path, class: "nav-link" %>
                     </li>
                     <% if user_signed_in? %>
-                      <li class="nav-item"><%= link_to "New Tweetply", new_search_path, class: "nav-link" %></li>
-                      <li class="nav-item"><%= link_to "Dash", searches_path, class: "nav-link" %></li>
-                      <li class="nav-item"><%= link_to "Profile", edit_user_registration_path, class: "nav-link" %></li>
-                      <li class="nav-item nav"><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+                      <li class="nav-item nav-link"><%= link_to "New Tweetply", new_search_path, class: "" %></li>
+                      <li class="nav-item nav-link"><%= link_to "Dash", searches_path, class: "" %></li>
+                      <li class="nav-item nav-link"><%= link_to "Profile", edit_user_registration_path, class: "" %></li>
+                      <li class="nav-item nav-link"><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
 
 
                     <% else %>
-                      <li class="nav-item"><%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %></li>
-                     <li class="nav-item"><%= link_to "Log In", new_user_session_path, class: "nav-link" %></li>
-                      <li class="nav-item">
-                        <a class="nav-link">Features</a>
+                      <li class="nav-item nav-link"><%= link_to "Sign Up", new_user_registration_path, class: "" %></li>
+                     <li class="nav-item nav-link"><%= link_to "Log In", new_user_session_path, class: "" %></li>
+                      <li class="nav-item nav-link">
+                        <a class="">Features</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Pricing</a>
+                    <li class="nav-item nav-link">
+                        <a class="">Pricing</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link">About</a>
+                    <li class="nav-item nav-link">
+                        <a class="">About</a>
                     </li>
                     <% end %>
 

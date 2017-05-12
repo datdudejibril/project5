@@ -118,3 +118,8 @@ p, ol, ul, td {
     line-height: 18px;
     margin: 33px;
 }
+
+a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
