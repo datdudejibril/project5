@@ -1,0 +1,115 @@
+/* YOUR CUSTOM STYLES */
+
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+html,
+body,
+.view {
+    height: 100%;
+    width: 100%;
+}
+/* Navigation*/
+
+.navbar {
+    background-color: rgba(28, 35, 49, 0.59);
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: #1C2331;
+}
+
+footer.page-footer {
+    background-color: #1C2331;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #1C2331;
+    }
+}
+/* Carousel*/
+
+.carousel,
+.carousel-item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.flex-center {
+    color: #fff;
+}
+
+.carousel-caption {
+    height: 100%;
+    padding-top: 7rem;
+}
+
+
+/*Pages
+*/
+
+
+a.brand-logo {
+    color: white;
+    margin-top: 30px;
+}
+
+ul.navbar-nav.mr-auto {
+    margin-right: 25%;
+    margin-left: 0px;
+}
+
+ul.navbar-nav.mr-auto {
+    margin-left: 60% !important;
+}
+
+footer.page-footer .call-to-action {
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+hr {
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+
+.partials {
+    min-height: 80%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 100px auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+footer.page-footer.center-on-small-only.footer {
+    margin-top: 40px !important;
+}
+
+label {
+    font-size: 1rem;
+    color: #9e9e9e;
+}
+
+input {
+    font-size: 1.75em !important;
+}
+
+
