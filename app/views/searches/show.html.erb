@@ -1,17 +1,27 @@
-<p>
-  <strong>Name:</strong>
-  <%= @search.name %>
-</p>
+<div class="row">
+  <p>
+    <strong>Name:</strong>
+    <%= @search.name %>
+  </p>
 
-<p>
-  <strong>Search text:</strong>
-  <%= @search.search_text %>
-</p>
+  <p>
+    <strong>Search text:</strong>
+    <%= @search.search_text %>
+  </p>
 
-<p>
-  <strong>Reply tweet:</strong>
-  <%= @search.reply_tweet %>
-</p>
+  <p>
+    <strong>Reply tweet:</strong>
+    <%= @search.reply_tweet %>
+  </p>
+</div>
+
+<div class="row">
+
+    <%= @client.search_tweets %>
+
+</div>
+
+
 
 <%= link_to 'Edit', edit_search_path(@search) %> |
 <%= link_to 'Back', searches_path %>

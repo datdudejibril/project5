@@ -6,6 +6,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicon1.png', sizes: '16x16 32x32' %>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -14,8 +24,15 @@
     <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert alert-info") %>
     <% end %>
-    <div class="container">
+
     <%= yield %>
-    </div>
+<%= render 'layouts/footer' %>
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert alert-info") %>
+    <% end %>
   </body>
 </html>
+
+
+
+
