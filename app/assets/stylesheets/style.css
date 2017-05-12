@@ -112,4 +112,9 @@ input {
     font-size: 1.75em !important;
 }
 
-
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 33px;
+}

@@ -55,6 +55,6 @@ class SearchesController < ApplicationController
     end
 
     def search_params
-      params.require(:search).permit(:name, :search_text)
+      params.require(:search).permit(:name, :search_text, :reply_tweet)
     end
 end
