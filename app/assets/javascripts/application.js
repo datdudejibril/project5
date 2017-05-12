@@ -13,5 +13,4 @@
 //= require jquery
 //= require bootstrap.min.js
 //= require jquery_ujs
-//= require materialize-sprockets
 //= require_tree .

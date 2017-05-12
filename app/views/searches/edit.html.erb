@@ -1,6 +1,11 @@
-<h1>Editing Search</h1>
+<div class="container partials">
+
+<h3>Editing Search</h3>
 
 <%= render 'form', search: @search %>
+<ul>
+<li><%= link_to 'Show', @search %> </li>
+<li><%= link_to 'Back', searches_path %></li>
+</ul>
 
-<%= link_to 'Show', @search %> |
-<%= link_to 'Back', searches_path %>
+</div>

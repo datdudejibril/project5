@@ -27,6 +27,14 @@
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+  <ul>
+  <li>
+    <%= f.submit :create, class: 'btn btn-primary' %>
+      </li>
+      <li>
+      <%= link_to 'Back', searches_path, class: "btn btn-default"  %>
+      </li>
+
+    </ul>
   </div>
 <% end %>
