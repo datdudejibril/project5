@@ -38,6 +38,8 @@ gem 'paperclip', '~> 5.1'
 gem 'materialize-sass', '~> 0.98.2'
 gem 'bootstrap'
 gem 'twitter'
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
