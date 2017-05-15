@@ -1,6 +1,5 @@
 ## Tweetp.ly - WDI Project #5
 
-![Landing Screenshot](https://github.com/aylinmarie/project-3/blob/master/public/images/FireShot%20Capture%2020%20-%20Grade.ly%20-%20https___mysterious-badlands-18420.herokuapp.com_%23!_.png?raw=true)
 
 ## Overview
 A application that accepts a tweetply phrase, looks for twitter users that have used that
